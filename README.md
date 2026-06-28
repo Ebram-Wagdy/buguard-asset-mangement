@@ -2,7 +2,7 @@
 
 An intelligent, multi-tenant cybersecurity asset management API. Built with FastAPI, PostgreSQL, and OpenAI.
 
-## 🚀 Setup & Run Instructions
+##  Setup & Run Instructions
 
 This application is fully containerized. You can launch the entire stack (API + PostgreSQL database) with a single command.
 
@@ -27,14 +27,14 @@ docker-compose up --build
 
 ---
 
-## 📚 API Documentation
+##  API Documentation
 
 Once the application is running, the auto-generated interactive documentation is available at:
-👉 **[http://localhost:8000/docs](http://localhost:8000/docs)**
+ **[http://localhost:8000/docs](http://localhost:8000/docs)**
 
 ---
 
-## 🧪 How to Run the Tests
+##  How to Run the Tests
 
 The test suite uses `pytest` and mocks the database and OpenAI calls to ensure isolated, fast, and deterministic testing. 
 
@@ -46,7 +46,7 @@ docker-compose exec api pytest
 
 ---
 
-## 🧠 Design Decisions & Assumptions
+##  Design Decisions & Assumptions
 
 ### 1. Multi-Tenant Architecture
 - **Decision:** Strict logical isolation at the database layer. Every API endpoint requires an `x-tenant-id` UUID header.
@@ -66,7 +66,7 @@ docker-compose exec api pytest
 
 ---
 
-## 🤖 AI Track: Example Prompts & Outputs
+##  AI Track: Example Prompts & Outputs
 
 ### Capability 1: Natural Language Querying
 **Prompt:**
